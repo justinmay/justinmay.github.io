@@ -13,6 +13,24 @@
     margin: 0;
   }
 
+/* Remove rounded borders on input fields */
+.form-control {
+    border-radius: 0;
+  }
+
+  /* Disable the ability to resize textareas */
+  textarea {
+      resize: none;
+  }
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+
+  .navbar {
+      font-family: Montserrat, sans-serif;
+  }
+
   #wrapper {
     min-height: 100%; 
   }
@@ -28,6 +46,53 @@
   #menu2{
     background:#eeeade;
   }
+
+  /* Add a dark background color with a little bit see-through */ 
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
 
 
 </style>
@@ -107,7 +172,7 @@
 </style> <!--adds css element, the padding moves the headder down-->
 </head>
 
-<body bgcolor="white">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 
@@ -163,7 +228,7 @@
 
 
   <!--                               THE BODY                                       -->
-  <div class="container text-center"> <!--the container is part of bootstrap, text-center centers it in the container-->
+  <div id="band" class="container text-center"> <!--the container is part of bootstrap, text-center centers it in the container-->
    <h3>RUTGERS ACADEMIC TEAM</h3>
    <p><em>We love a challenge!</em></p> <!--em makes something italic-->
    <p>we ahve created a fictional band website.</p>
@@ -272,7 +337,7 @@
 .bg-1 p {font-style: italic;}
 </style>
 
-<div class="bg-1" id="wrapper">
+<div class="bg-1" id="tour">
 
   <div class="container" id="wrapper">
     <h3 class="text-center">UPCOMING TOURNAMENTS</h3>
@@ -415,7 +480,39 @@
 .bg-2 p {font-style: italic;}
 </style>
 <!--                                    THE BOTTOM                                    -->
-<div class="container" style="background:#ffffff">
+<div id="contact" class="container" style="background:#ffffff">
+  <div style="background:#eeeade">
+  <h3 class="text-center" style="color:black;height:25px">Meet the Players</h3>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Emmett</a></li>
+          <li><a data-toggle="tab" href="#menu1">Anand</a></li>
+          <li><a data-toggle="tab" href="#menu2">Jason</a></li>
+        </ul>
+
+        <div class="tab-content" style="background:#cec9bb" >
+          <div id="home" class="tab-pane fade in active" style="background:#eeeade">
+            <h2>Emmett Laurie, Manager</h2>
+              <p>LOLOL i suck.</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h2>Anand, Guitarist</h2>
+            <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h2>Jason Xu, Bass player</h2>
+            <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
   <h3 class="text-center" style="color:#000000">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
   <div class="row test">
@@ -453,29 +550,7 @@
 }
 </style>
 
- <div style="background:#eeeade">
-  <h3 class="text-center" style="color:black;height:25px">Meet the Players</h3>
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Emmett</a></li>
-          <li><a data-toggle="tab" href="#menu1">Anand</a></li>
-          <li><a data-toggle="tab" href="#menu2">Jason</a></li>
-        </ul>
-
-        <div class="tab-content" style="background:#cec9bb" >
-          <div id="home" class="tab-pane fade in active" style="background:#eeeade">
-            <h2>Emmett Laurie, Manager</h2>
-              <p>LOLOL i suck.</p>
-          </div>
-          <div id="menu1" class="tab-pane fade">
-            <h2>Anand, Guitarist</h2>
-            <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
-          </div>
-          <div id="menu2" class="tab-pane fade">
-            <h2>Jason Xu, Bass player</h2>
-            <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
-          </div>
-        </div>
-</div>
+ 
 </div>
 
 </div>
@@ -486,8 +561,8 @@
 #googleMap {
     width: 100%; /* Span the entire width of the screen */
     height: 400px; /* Set the height to 400 pixels */
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); /* Change the color of the map to black and white * /
+    -webkit-filter: ;
+    filter:  /* challengenge the color of the map to black and white * /
 }
 </style>
 
@@ -519,9 +594,9 @@ marker.setMap(map);
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">IMPORTANT DOCUMENTS</a></li>
+        <li><a href="#tour">UPCOMING TOURNAMENTS</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
@@ -538,5 +613,70 @@ marker.setMap(map);
     </div>
   </div>
 </nav>
+
+
+
+
+
+
+<style>
+/* Add a dark background color to the footer */
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+</style>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Website made by  <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">Justin May</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if 
+  });
+})
+</script>
 </body>
 </html>
