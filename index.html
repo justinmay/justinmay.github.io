@@ -23,6 +23,8 @@
 				    color: #fff !important;
 				}
 
+
+
 				@media (max-width: 600px) {
 				    .carousel-caption {
 				        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -102,9 +104,11 @@
 				    <div class="collapse navbar-collapse" id="myNavbar">
 				     	<ul class="nav navbar-nav navbar-right">
 					        <li><a href="#home">HOME</a></li>
+					        <li><a href="#links">LINKS</a></li>
 					        <li><a href="#myCarousel">PHOTOGRAPHY</a></li>
 					        <li><a href="#skills">SKILLS</a></li>
-					        <li><a href="#contact">Experience</a></li>
+					        <li><a href="#personalProjects">PERSONAL PROJECTS</a></li>
+					        <li><a href="#contact">EXPERIENCE</a></li>
 					        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 				     	</ul>
 				    </div>
@@ -127,110 +131,151 @@
 				 <p>I am a sophomore at the Rutgers Engineering Honors Academy studying Electrical and Computer Enigneering(ECE) double majored with Computer Science. I am a strong believer in the application of technology for the greater good. Raised theravada buddhist, I strongly believe in using compassion and loving kindness to better identify with and solve the suffering of those around us. All my personal projects have been inspired by problems I or those around me have experience at some point or another. Beyond that, I love pursuing my many hobbies: photography, Model UN, longboarding, and reading. </p>
 
 				 <br>
-
-				 <!-- personal projects -->
-				 <div class="row">
-				 <!-- project 1 -->
-				    <div class="col-sm-4">
-				    	<p><strong>Running Into the 90's</strong></p><br>
-				    	<p><strong>Top 10 at PennApps 2018</strong></p><br>
-				    	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/RunningInThe90s.png" alt="Random Name">
-				   	  
-				    	<p>This is an interactive game to learn simple piano mechanics by giving children a fun rewarding way to practice. Using a Midicontroller we map piano keys onto a keyboard, and use them as inputs. Chords and arpeggios correspond to actions on the screen.</p>
-				    </div>
-
-				    <!-- personal project 2 -->
-				    <div class="col-sm-4">
-				    	<p><strong>Match Maker</strong></p><br>
-				    	<p></p>
-				    	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/MatchMaker.png" alt="Random Name">
-				    	<p>MatchMaker pairs you up with other tennis players located near you and around a similar skill level. The app gives you a selection of players to choose from, and if you would like to challenge them to a match, simply click on their icon, view their statistics, and begin chatting with them to schedule a match.</p>
-				    </div>
-
-				    <div class="col-sm-4">
-				    	<p><strong>Name</strong></p><br>
-				    	<img src="bandmember.jpg" alt="Random Name">
-				    </div>
-				</div>
-
 			</div>
 
 
+			<!-- split -->
+
+			<style>
+				.bg-1-1 {
+				    background: #C4C4C4;
+				    color: #2d2d30;
+				}
+				.container{
+					background: #ffffff
+				}
+
+				.center {
+				    display: block;
+				    margin-left: auto;
+				    margin-right: auto;
+				    width: 50%;
+				}
+
+			</style>
+
+			<div id = "links" class = "bg-1-1">
+				 <!-- personal projects -->
+				 <hr style="height:30pt; visibility:hidden;" />
+				 <div class="container">
+					<div class="row">
+					 <!-- project 1 -->
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>Resume</strong></p><br>
+					    	<a href="https://www.github.com/justinmay" target="_blank"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/006-resume.png" alt="Random Name"><a>
+					    </div>
+
+					    <!-- personal project 2 -->
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>GitHub</strong></p><br>
+					    	<a href="https://www.github.com/justinmay" target="_blank"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/005-github-logo.png" alt="Random Name"></a>
+					    </div>
+
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>LinkedIn</strong></p><br>
+					    	<a href="https://www.linkedin.com/in/justinseanmay" target="_blank"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/004-linkedin.png" alt="Random Name"></a>
+					    </div>
+					</div>
+
+					<hr style="height:20pt; visibility:hidden;" />
+
+					<div class="row">
+					 <!-- project 1 -->
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>Flickr</strong></p><br>
+					    	<a href=https://www.flickr.com/people/144687104@N05/ target="_blank"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/002-flickr.png" alt="Random Name"></a>
+					    </div>
+
+					    <!-- personal project 2 -->
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>Devpost</strong></p><br>
+					    	<a href=https://devpost.com/justinseanmay target="_blank"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/003-computer.png" alt="Random Name"></a>
+					    </div>
+
+					    <div class="col-sm-4">
+					    	<p class="text-center"><strong>Email</strong></p><br>
+					    	<a href="mailto:justin.sean.may@gmail.com?Subject=Contact%20Justin%20May" target="_top"><img class = "center" src="https://s3.amazonaws.com/justin-may-personal-website-drive/001-gmail.png" alt="Random Name"></a>
+					    </div>
+					</div>
+				</div>
+				<hr style="height:30pt; visibility:hidden;" />
+			</div>
+
 			<!-- images portfolio -->
 
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<div id="myCarousel" class="carousel slide" background= "#2d2d30" data-ride="carousel" data-interval="5000">
 
 				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
-				    <li data-target="#myCarousel" data-slide-to="3"></li>
-				    <li data-target="#myCarousel" data-slide-to="4"></li>
-				    <li data-target="#myCarousel" data-slide-to="5"></li>
-				  </ol>
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+				</ol>
 
 				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
+				<div class="carousel-inner" role="listbox">
 				    <div class="item active">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Alex1.jpg" alt="New York">
-				      <div class="carousel-caption">
-				        <h3>New York, New York</h3>
-				        <p>Captured outside the UN Building NHSMUN 2017</p>
-				      </div> 
+				      	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Alex1.jpg" alt="New York">
+				      		<div class="carousel-caption">
+				       			<h3>New York, New York</h3>
+				        		<p>Captured outside the UN Building NHSMUN 2017</p>
+				      		</div> 
 				    </div>
 
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Elsa1.jpg" alt="Chicago">
-				      <div class="carousel-caption">
-				        <h3>Farrington Lake, North Brunswick</h3>
-				        <p>Catpured teetering frozen lake.</p>
-				      </div> 
+				     	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Elsa1.jpg" alt="Chicago">
+				      	<div class="carousel-caption">
+				        	<h3>Farrington Lake, North Brunswick</h3>
+				        	<p>Catpured teetering frozen lake.</p>
+				      	</div> 
 				    </div>
 
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Eugene1.jpg" alt="Los Angeles">
-				      <div class="carousel-caption">
-				        <h3>Brooklyn, New York</h3>
-				        <p>Captured roaming the streets of Bushwick.</p>
-				      </div> 
+				      	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Eugene1.jpg" alt="Los Angeles">
+				      	<div class="carousel-caption">
+				        	<h3>Brooklyn, New York</h3>
+				        	<p>Captured roaming the streets of Bushwick.</p>
+				      	</div> 
 				    </div>
 
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Karla1.jpg" alt="Los Angeles">
-				      <div class="carousel-caption">
-				        <h3>Rutgers, New Brunswick</h3>
-				        <p>Captured having a great time on the banks of the Raritan.</p>
-				      </div> 
+				      	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Karla1.jpg" alt="Los Angeles">
+				      	<div class="carousel-caption">
+				        	<h3>Rutgers, New Brunswick</h3>
+				        	<p>Captured having a great time on the banks of the Raritan.</p>
+				      	</div> 
 				    </div>
 
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Lisa21.jpg" alt="Los Angeles">
-				      <div class="carousel-caption">
-				        <h3>Rutgers Gardens, Piscataway</h3>
-				        <p>Captured exploring a babbling brook.</p>
-				      </div> 
+				      	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Lisa21.jpg" alt="Los Angeles">
+				      	<div class="carousel-caption">
+				        	<h3>Rutgers Gardens, Piscataway</h3>
+				        	<p>Captured exploring a babbling brook.</p>
+				      	</div> 
 				    </div>
 
 				    <div class="item">
-				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Shashwut1.jpg" alt="Los Angeles">
-				      <div class="carousel-caption">
-				        <h3>Heavenly Farms, East Brunswick</h3>
-				        <p>Captured lost in the ivy.</p>
-				      </div> 
+				      	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Shashwut1.jpg" alt="Los Angeles">
+				      	<div class="carousel-caption">
+				        	<h3>Heavenly Farms, East Brunswick</h3>
+				        	<p>Captured lost in the ivy.</p>
+				      	</div> 
 				    </div>
-				  </div>
+				</div>
 
 				  <!-- Left and right controls -->
-				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 				    <span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
-				  </a>
-				</div>
+				</a>
+			</div>
 
 			
 
@@ -240,20 +285,26 @@
 			    background: #2d2d30;
 			    color: #bdbdbd;
 			}
-			.bg-1 h3 {color: #fff;}
-			.bg-1 p {font-style: italic;}
+			.bg-1 h3 {color: #2d2d30;
+			}
+			.bg-1 h1 {color: #2d2d30;
+			}
+			.bg-1 p {color:#2d2d30 ;}
+			.bg-1 li {color:#2d2d30 ;}
 			</style>
 
+			
 			<div id = "skills" class="bg-1">
+				<hr style="height:20pt; visibility:hidden;" />
 			    <div class="container">
-				    <h3 class="text-center">Skills</h3>
+				    <h1 class="text-center">Skills</h1>
 				    <div class = "row">
 
 				    	<!-- programing languages -->
 
 						<div class = "col-sm-4">
 						    <ul class="list-group">
-						    	<p class="text-center">Softwares</p>
+						    	<h3 class="text-center">Softwares</h3>
 						    	<li class="list-group-item">Unity</li>
 						    	<li class="list-group-item">Xcode</li> 
 						    	<li class="list-group-item">Android Studio</li> 
@@ -264,7 +315,7 @@
 
 						<div class = "col-sm-4">
 						    <ul class="list-group">
-						    	<p class="text-center">Programming Languages </p>
+						    	<h3 class="text-center">Programming Languages </h3>
 						    	<li class="list-group-item">Java</li>
 						    	<li class="list-group-item">C</li> 
 						    	<li class="list-group-item">C#</li> 
@@ -276,7 +327,7 @@
 
 						<div class = "col-sm-4">
 						    <ul class="list-group">
-						    	<p class="text-center">Relavent Coursework</p>
+						    	<h3 class="text-center">Relavent Coursework</h3>
 						    	<li class="list-group-item">Data Structures</li>
 						    	<li class="list-group-item">Computer Architecture</li> 
 						    	<li class="list-group-item">Linear Algebra</li> 
@@ -287,8 +338,11 @@
 						</div>
 					</div>
 			    
-					<div class="row text-center">
-						<h3 class="text-center">Personal Projects</h3>
+			    	<hr style="height:30pt; visibility:hidden;" />
+
+					<div class="row text-center" id = "personalProjects">
+						<h1 class="text-center">Personal Projects</h1>
+						<hr style="height:20pt; visibility:hidden;" />
 						<div class="col-sm-4">
 						    <div class="thumbnail">
 						      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/MatchMaker.png" alt="Paris">
@@ -322,6 +376,42 @@
 			</div>
 
 
+		<style>
+			/* Add a dark background color to the footer */
+			footer {
+			    background-color: #2d2d30;
+			    color: #f5f5f5;
+			    padding: 32px;
+			}
+
+			footer a {
+			    color: #f5f5f5;
+			}
+
+			footer a:hover {
+			    color: #777;
+			    text-decoration: none;
+			}
+		</style>
+
+		<footer class="text-center">
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<br><br>
+			<p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p> 
+		</footer>
+
+		<script>
+			$(document).ready(function(){
+			    // Initialize Tooltip
+			    $('[data-toggle="tooltip"]').tooltip(); 
+			})
+		</script>
+
+
+
+
 		<!-- smooth scrolling -->
 		<script>
 			$(document).ready(function(){
@@ -350,17 +440,5 @@
 			  });
 			})
 			</script>
-
-
-
-
-
-
-
-
-
-
-
-
 		</body>
 	</html>
