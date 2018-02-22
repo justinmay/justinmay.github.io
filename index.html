@@ -1,700 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Rutgers Academic Team</title> <!-- pretty self explanatory -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style type="text/css">
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-
-/* Remove rounded borders on input fields */
-.form-control {
-    border-radius: 0;
-  }
-
-  /* Disable the ability to resize textareas */
-  textarea {
-      resize: none;
-  }
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
-
-  .navbar {
-      font-family: Montserrat, sans-serif;
-  }
-
-  #wrapper {
-    min-height: 100%; 
-  }
-
-  #home{
-    background:#eeeade;
-  }
-
-  #menu1{
-    background:#eeeade;
-  }
-
-  #menu2{
-    background:#eeeade;
-  }
-
-  /* Add a dark background color with a little bit see-through */ 
-.navbar {
-    margin-bottom: 0;
-    background-color: #990000;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity:0.9;
-}
-
-/* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
-
-/* The active link */
-.navbar-nav li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
-}
-
-/* Remove border color from the collapsible button */
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-
-/* Dropdown */
-.open .dropdown-toggle {
-    color: #fff ;
-    background-color: #555 !important;
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-    color: #000 !important;
-}
-
-/* On hover, the dropdown links will turn red */
-.dropdown-menu li a:hover {
-    background-color: red !important;
-}
-
-
-</style>
-<style> 
-/* Remove rounded borders from list */
-.list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.list-group-item:last-child {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* Remove border and add padding to thumbnails */
-.thumbnail {
-  padding: 0 0 15px 0;
-  border: none;
-  border-radius: 0;
-}
-
-.thumbnail p {
-  margin-top: 15px;
-  color: #555;
-}
-
-/* Black buttons with extra padding and without rounded borders */
-.btn {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #f1f1f1;
-  border-radius: 0;
-  transition: .2s;
-}
-
-/* On hover, the color of .btn will transition to white with black text */
-.btn:hover, .btn:focus {
-  border: 1px solid #333;
-  background-color: #fff;
-  color: #000;
-}
-.container {
- padding: 80px 120px;
-}
-.circle-avatar{ /* make it responsive */ 
- max-width: 100%; 
- width:100%; 
- border:soldi transparent;
- opacity: .9 ;
- height:auto; 
- display:block; /* div height to be the same as width*/ 
- padding-top:100%; /* make it a circle */ 
- border-radius:50%; /* Centering on image`s center*/ 
- background-position-y: center; 
- background-position-x: center; 
- background-repeat: no-repeat; /* it makes the clue thing, takes smaller dimension to fill div */ 
- background-size: cover; /* it is optional, for making this div centered in parent*/ 
- margin: 0 auto; top: 0; left: 0; right: 0; bottom: 0; 
-}
-.carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: ;
-  height: 20%;
-}
-
-.carousel-caption h3 {
-  color: #fff !important;
-}
-
-@media (max-width: 60px) {
-  .carousel-caption {
-    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-  }
-}
-
-</style> <!--adds css element, the padding moves the headder down-->
-</head>
-
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-
-
-
-  <!-- START CAROSUEL-->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="background.jpg" alt="New York">
-        <div class="carousel-caption">
-          <h3>Rutgers Academic Team</h3>
-          <p>Home of the Scarlet Knights</p>
-        </div> 
-      </div>
-
-      <div class="item">
-        <img src="background.png" alt="Chicago">
-        <div class="carousel-caption">
-          <h3 style="color:black">NAQT</h3>
-          <p>Leading NAQT team, qualifying for nationals every year</p>
-        </div> 
-      </div>
-
-      <div class="item">
-        <img src="background3.jpg" alt="Los Angeles">
-        <div class="carousel-caption">
-          <h3 style = "color:black">Rutgers Pride</h3>
-          <p style="color:black">Big 10 leadership, academics, and energy</p>
-        </div> 
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <!-- END CAROUSEL -->
-
-
-
-  <!--                               THE BODY                                       -->
-  <div id="band" class="container text-center"> <!--the container is part of bootstrap, text-center centers it in the container-->
-   <h3>RUTGERS ACADEMIC TEAM</h3>
-   <p><em>The OFFICIAL page of the Scarlet Knight Academic Team!</em></p> <!--em makes something italic-->
-   <p> The Rutgers University Academic Team was established in March of 1999 to promote academic competition at Rutgers University and to represent the University in intercollegiate events. </p>
-   <br> <!-- adds a break -->
-
-   <container>
-    <div style="background:#eeeade">
-  <div style="height: 100px"><h1 class="text-center" style="color:#5c5b5b;height:25px"><br></br>Meet the Players</h1></div>
-        <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#home">Emmett</a></li>
-          <li><a data-toggle="tab" href="#menu1">Anand</a></li>
-          <li><a data-toggle="tab" href="#menu2">Jason</a></li>
-        </ul>
-
-        <div class="tab-content" style="background:#cec9bb" >
-          <div id="home" class="tab-pane fade in active" style="background:#eeeade">
-            <h2>Emmett Laurie, Manager  <div class="col-sm-4"><a href="#picture1"> <div class="circle-avatar" style="background-image:url(4.jpg)"></div> </a></div></h2>
-            <p>LOLOL i suck.</p>
-            <div style="height: 220px"></div>
-          </div>
-          <div id="menu1" class="tab-pane fade">
-            <h2>Anand, Guitarist  <div class="col-sm-4"><a href="#picture1"> <div class="circle-avatar" style="background-image:url(4.jpg)""></div></a></div> </h2>
-            <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
-            <div style="height: 220px"></div>
-          </div>
-          <div id="menu2" class="tab-pane fade">
-            <h2>Jason Xu, Bass player <div class="col-sm-4"><a href="#picture1"> <div class="circle-avatar" style="background-image:url(4.jpg)""></div></a></div> </h2>
-            <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
-            <div style="height: 220px"></div>
-          </div>
-        </div>
-</div>
-   </container>
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- ROW 1 of people -->
-   <div class="row"> <!-- creates a row div -->
-    <!-- person 1 -->
-    <div class = "col-sm-4"> <!-- Creates a row on the right-->
-     <p><strong>Important Documents Here</strong></p>  <!-- paragraph (title) bolded -->
-     <a href="#picture1" data-toggle="collapse">
-       <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
-     </a>
-     <div id="picture1" class="collapse">
-      <p>Guitarist and Lead Vocalist</p>
-      <p>Loves long walks on the beach</p>
-      <p>Member since 1988</p>
-    </div>
-  </div>
-
-  <!-- person 2 -->
-  <div class = "col-sm-4"> <!-- Creates a row on the right-->
-   <p><strong>Emmett Laurie</strong></p>  <!-- paragraph (title) bolded -->
-   <a href="#picture2" data-toggle="collapse">
-     <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
-   </a>
-   <div id="picture2" class="collapse">
-    <p>Guitarist and Lead Vocalist</p>
-    <p>Loves long walks on the beach</p>
-    <p>Member since 1988</p>
-  </div>
-</div>
-
-<!-- person 3 -->
-<div class = "col-sm-4"> <!-- Creates a row on the right-->
- <p><strong>Emmett Laurie</strong></p>  <!-- paragraph (title) bolded -->
- <a href="#picture3" data-toggle="collapse">
-   <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
- </a>
- <div id="picture3" class="collapse">
-  <p>Guitarist and Lead Vocalist</p>
-  <p>Loves long walks on the beach</p>
-  <p>Member since 1988</p>
-</div>
-</div>
-</div>
-
-<br>
-<br>
-
-<!-- ROW 2 OF PEOPLE -->
-<div class="row"> <!-- creates a row div -->
-  <!-- person 1 -->
-  <div class = "col-sm-4"> <!-- Creates a row on the right-->
-   <p><strong>Important Doc Here</strong></p>  <!-- paragraph (title) bolded -->
-   <a href="#picture4" data-toggle="collapse">
-     <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
-   </a>
-   <div id="picture4" class="collapse">
-    <p>Guitarist and Lead Vocalist</p>
-    <p>Loves long walks on the beach</p>
-    <p>Member since 1988</p>
-  </div>
-</div>
-
-<!-- person 2 -->
-<div class = "col-sm-4"> <!-- Creates a row on the right-->
- <p><strong>Important Doc Here</strong></p>  <!-- paragraph (title) bolded -->
- <a href="#picture5" data-toggle="collapse">
-   <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
- </a>
- <div id="picture5" class="collapse">
-  <p>Guitarist and Lead Vocalist</p>
-  <p>Loves long walks on the beach</p>
-  <p>Member since 1988</p>
-</div>
-</div>
-
-<!-- person 3 -->
-<div class = "col-sm-4"> <!-- Creates a row on the right-->
- <p><strong>Important Doc Here</strong></p>  <!-- paragraph (title) bolded -->
- <a href="#picture6" data-toggle="collapse">
-   <div class="circle-avatar" style="background-image:url(4.jpg)"></div>
- </a>
- <div id="picture6" class="collapse">
-  <p>Guitarist and Lead Vocalist</p>
-  <p>Loves long walks on the beach</p>
-  <p>Member since 1988</p>
-</div>
-</div>
-
-</div>
-</div>
-<!--                               END BODY                                        -->
-
-
-
-<!-- this is the section of upcoming tournaments -->
-<style>
-.bg-1 {
-  background: #990000
-  ;
-  color: #242425;
-}
-.bg-1 h3 {color: #fff;}
-.bg-1 p {font-style: italic;}
-</style>
-
-<div class="bg-1" id="tour">
-
-  <div class="container" id="wrapper">
-    <h3 class="text-center">UPCOMING TOURNAMENTS</h3>
-
-    <ul class="list-group">
-     <li class="list-group-item">Cornell 9/25</li>
-     <li class="list-group-item">Princeton 12/4</li> 
-     <li class="list-group-item"><strong>Middlesex County College 1/1 </strong><span class="label label-danger">No More Space!</span></li> 
-     <li class="list-group-item">Yale 3/2</li>
-     <li class="list-group-item">MIT 5/21</li>
-     <li class="list-group-item">Stanford 6/12</li>
-
-
-   </ul>
- </div>
-
- <div class="row text-center">
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="priceton.jpg" alt="Paris">
-      <p><strong>Princeton</strong></p>
-      <p>Fri. 4 December 2017</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="cornell.jpg" alt="New York">
-      <p><strong>Cornell</strong></p>
-      <p>Sat. 25 September 2017</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="mcc.png" alt="San Francisco">
-      <p><strong>Middlesex County College</strong></p>
-      <p>Sun. 1 January 2018</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-</div>
-<div class="row text-center">
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="yale.jpg" alt="Paris">
-      <p><strong>Yale</strong></p>
-      <p>Wed. 3 March 2018</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="MIT.jpg" alt="New York">
-      <p><strong>MIT</strong></p>
-      <p>Sat. 21 May 2018</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="thumbnail">
-      <img src="stanford.jpg" alt="San Francisco">
-      <p><strong>Stanford</strong></p>
-      <p>Sun. 1 June 2018</p>
-      <button class="btn" data-toggle="modal" data-target="#myModal" >Register</button>
-    </div>
-  </div>
-</div>
-
-  <!--                                               THIS IS THE MODAL                                       -->
-  <style>
-  /* Add a dark gray background color to the modal header and center text */
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-</style>
-
-<!-- Used to open the Modal -->
-<button class="btn" data-toggle="modal" data-target="#myModal">Register</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4><span class="glyphicon glyphicon-lock"></span> Register </h4>
-      </div>
-      <div class="modal-body">
-        <form role="form">
-          <div class="form-group">	
-            <label for="psw"><span></span> Can you drive?</label>
-            <input type="number" class="form-control" id="psw" placeholder="How many people?">
-          </div>
-          <div class="form-group">
-            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email </label>
-            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-          </div>
-          <button type="submit" class="btn btn-block">Sign Up 
-            <span class="glyphicon glyphicon-ok"></span>
-          </button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-          <span class="glyphicon glyphicon-remove"></span> Cancel
-        </button>
-        <p>Need <a href="#">help?</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!--                                    END THE MODAL                                 -->
-
-<style>
-.bg-2 {
-  background: #ffffff;
-  color: #242425;
-}
-.bg-2 h3 {color: #fff;}
-.bg-2 p {font-style: italic;}
-</style>
-<!--                                    THE BOTTOM                                    -->
-<div id="contact" class="container" style="background:#ffffff">
-  
-
-
-
-
-
-
-
-
-
-  <h3 class="text-center" style="color:#000000">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
-  <div class="row test">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>New Brunswick, NY</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 7327352522</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: justin.may@rutgers.edu</p> 
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
-        </div>
-      </div> 
-    </div>
-  </div>
-  <style>
-.nav-tabs li a {
- background:#eeeade;
- color: #777;
-}
-
-.tab-pane{
-  background-color:#eeeade;
-}
-</style>
-
- 
-</div>
-
-</div>
-
-<!--                                       END OF THE BOTTOM                              -->
-
-<style>
-#googleMap {
-    width: 100%; /* Span the entire width of the screen */
-    height: 400px; /* Set the height to 400 pixels */
-    -webkit-filter: ;
-    filter:  /* challengenge the color of the map to black and white * /
-}
-</style>
-
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(40.4861111, -74.4522222);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvs11_SA0HT-rptDbtncWNaRZamKIi35c&callback=myMap"></script>
-
-
-
-<!-- this ends the section of upcoming tournaments -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#">RU∙Academic Team</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">THE TEAM</a></li>
-        <li><a href="#tour">UPCOMING TOURNAMENTS</a></li>
-        <li><a href="#contact">CONTACT US</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-            <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<
-
-
-
-
-
-<style>
-/* Add a dark background color to the footer */
-footer {
-    background-color: #990000;
-    color: #f5f5f5;
-    padding: 32px;
-}
-
-footer a {
-    color: #f5f5f5;
-}
-
-footer a:hover {
-    color: #777;
-    text-decoration: none;
-}
-</style>
-
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>Website made by  <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">Justin May</a></p> 
-</footer>
-
-<script>
-$(document).ready(function(){
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip(); 
-})
-</script>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if 
-  });
-})
-</script>
-</body>
-</html>
+	<html lang="en">
+		<head>
+		  <title>Justin May</title>
+		  <meta charset="utf-8">
+		  	<!--- bootstrap stuff -->
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+  			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 			<!-- CSS elements -->
+ 			<style type="text/css">
+
+ 				.container {
+ 					padding: 80px 120px;
+ 				}
+ 				.carousel-inner img {
+				    width: 100%; /* Set width to 100% */
+				    margin: auto;
+				}
+
+				.carousel-caption h3 {
+				    color: #fff !important;
+				}
+
+				@media (max-width: 600px) {
+				    .carousel-caption {
+				        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+				    }
+				}
+				/* Remove rounded borders from list */
+				.list-group-item:first-child {
+				    border-top-right-radius: 0;
+				    border-top-left-radius: 0;
+				}
+
+				.list-group-item:last-child {
+				    border-bottom-right-radius: 0;
+				    border-bottom-left-radius: 0;
+				}
+
+				/* Remove border and add padding to thumbnails */
+				.thumbnail {
+				    padding: 0 0 15px 0;
+				    border: none;
+				    border-radius: 0;
+				}
+
+				.thumbnail p {
+				    margin-top: 15px;
+				    color: #555;
+				}
+
+				/* Add a dark background color with a little bit see-through */ 
+				.navbar {
+				    margin-bottom: 0;
+				    background-color: #2d2d30;
+				    border: 0;
+				    font-size: 11px !important;
+				    letter-spacing: 4px;
+				    opacity:0.4;
+				}
+
+				/* Add a gray color to all navbar links */
+				.navbar li a, .navbar .navbar-brand { 
+				    color: #d5d5d5 !important;
+				}
+
+				/* On hover, the links will turn white */
+				.navbar-nav li a:hover {
+				    color: #ffffff !important;
+				}
+
+				/* The active link */
+				.navbar-nav li.active a {
+				    color: #fff !important;
+				    background-color:#ffffff !important;
+				}
+
+				/* Remove border color from the collapsible button */
+				.navbar-default .navbar-toggle {
+				    border-color: transparent;
+				}
+
+ 			</style>
+
+		</head>
+
+	<!-- -->
+		<body>
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container-fluid">
+				    <div class="navbar-header">
+				    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span> 
+				    	</button>
+				    	<a class="navbar-brand" href="#">Justin May</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				     	<ul class="nav navbar-nav navbar-right">
+					        <li><a href="#home">HOME</a></li>
+					        <li><a href="#band">PICTURES</a></li>
+					        <li><a href="#tour">SKILLS</a></li>
+					        <li><a href="#contact">CONTACT</a></li>
+					        <li class="dropdown">
+					          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+					            <span class="caret"></span>
+					          </a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Merchandise</a></li>
+					            <li><a href="#">Extras</a></li>
+					            <li><a href="#">Media</a></li> 
+					          </ul>
+					        </li>
+					        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+				     	</ul>
+				    </div>
+				</div>
+			</nav>
+
+
+
+
+
+
+
+
+
+			<!-- images portfolio -->
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				    <li data-target="#myCarousel" data-slide-to="4"></li>
+				    <li data-target="#myCarousel" data-slide-to="5"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Alex1.jpg" alt="New York">
+				      <div class="carousel-caption">
+				        <h3>New York, New York</h3>
+				        <p>Captured outside the UN Building NHSMUN 2017</p>
+				      </div> 
+				    </div>
+
+				    <div class="item">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Elsa1.jpg" alt="Chicago">
+				      <div class="carousel-caption">
+				        <h3>Farrington Lake, North Brunswick</h3>
+				        <p>Catpured teetering frozen lake.</p>
+				      </div> 
+				    </div>
+
+				    <div class="item">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Eugene1.jpg" alt="Los Angeles">
+				      <div class="carousel-caption">
+				        <h3>Brooklyn, New York</h3>
+				        <p>Captured roaming the streets of Bushwick.</p>
+				      </div> 
+				    </div>
+
+				    <div class="item">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Karla1.jpg" alt="Los Angeles">
+				      <div class="carousel-caption">
+				        <h3>Rutgers, New Brunswick</h3>
+				        <p>Captured having a great time on the banks of the Raritan.</p>
+				      </div> 
+				    </div>
+
+				    <div class="item">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Lisa21.jpg" alt="Los Angeles">
+				      <div class="carousel-caption">
+				        <h3>Rutgers Gardens, Piscataway</h3>
+				        <p>Captured exploring a babbling brook.</p>
+				      </div> 
+				    </div>
+
+				    <div class="item">
+				      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/Shashwut1.jpg" alt="Los Angeles">
+				      <div class="carousel-caption">
+				        <h3>Heavenly Farms, East Brunswick</h3>
+				        <p>Captured lost in the ivy.</p>
+				      </div> 
+				    </div>
+				  </div>
+
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			<!-- About Me/ Personal Projects Section -->
+
+			<div class = "container text-center">
+
+				<!-- about me -->
+				 <img width = "100%" height = "auto" src="https://s3.amazonaws.com/justin-may-personal-website-drive/jmay.jpg" alt="Random Name">
+				 <h3>Justin May</h3>
+				 <p><em>Who Am I?</em></p>
+				 <p>I am a sophomore at the Rutgers Engineering Honors Academy studying Electrical and Computer Enigneering(ECE) double majored with Computer Science. I am a strong believer in the application of technology for the greater good. Raised theravada buddhist, I strongly believe in using compassion and loving kindness to better identify with and solve the suffering of those around us. All my personal projects have been inspired by problems I or those around me have experience at some point or another. Beyond that, I love pursuing my many hobbies: photography, Model UN, longboarding, and reading. </p>
+
+				 <br>
+
+				 <!-- personal projects -->
+				 <div class="row">
+				 <!-- project 1 -->
+				    <div class="col-sm-4">
+				    	<p><strong>Running Into the 90's</strong></p><br>
+				    	<p><strong>Top 10 at PennApps 2018</strong></p><br>
+				    	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/RunningInThe90s.png" alt="Random Name">
+				   	  
+				    	<p>This is an interactive game to learn simple piano mechanics by giving children a fun rewarding way to practice. Using a Midicontroller we map piano keys onto a keyboard, and use them as inputs. Chords and arpeggios correspond to actions on the screen.</p>
+				    </div>
+
+				    <!-- personal project 2 -->
+				    <div class="col-sm-4">
+				    	<p><strong>Match Maker</strong></p><br>
+				    	<p></p>
+				    	<img src="https://s3.amazonaws.com/justin-may-personal-website-drive/MatchMaker.png" alt="Random Name">
+				    	<p>MatchMaker pairs you up with other tennis players located near you and around a similar skill level. The app gives you a selection of players to choose from, and if you would like to challenge them to a match, simply click on their icon, view their statistics, and begin chatting with them to schedule a match.</p>
+				    </div>
+
+				    <div class="col-sm-4">
+				    	<p><strong>Name</strong></p><br>
+				    	<img src="bandmember.jpg" alt="Random Name">
+				    </div>
+				</div>
+
+			</div>
+
+			<!-- languages I know -->
+			<style>
+			.bg-1 {
+			    background: #2d2d30;
+			    color: #bdbdbd;
+			}
+			.bg-1 h3 {color: #fff;}
+			.bg-1 p {font-style: italic;}
+			</style>
+
+			<div class="bg-1">
+			    <div class="container">
+				    <h3 class="text-center">Skills</h3>
+				    <div class = "row">
+
+				    	<!-- programing languages -->
+
+						<div class = "col-sm-4">
+						    <ul class="list-group">
+						    	<p class="text-center">Softwares</p>
+						    	<li class="list-group-item">Unity</li>
+						    	<li class="list-group-item">Xcode</li> 
+						    	<li class="list-group-item">Android Studio</li> 
+						    	<li class="list-group-item">Lightroom/Photoshop</li> 
+						    	<li class="list-group-item">Sales Force</li> 
+						    </ul>
+						</div>
+
+						<div class = "col-sm-4">
+						    <ul class="list-group">
+						    	<p class="text-center">Programming Languages </p>
+						    	<li class="list-group-item">Java</li>
+						    	<li class="list-group-item">C</li> 
+						    	<li class="list-group-item">C#</li> 
+						    	<li class="list-group-item">Matlab</li> 
+						    	<li class="list-group-item">Python</li> 
+						    	<li class="list-group-item">HTML/CSS</li> 
+						    </ul>
+						</div>
+
+						<div class = "col-sm-4">
+						    <ul class="list-group">
+						    	<p class="text-center">Relavent Coursework</p>
+						    	<li class="list-group-item">Data Structures</li>
+						    	<li class="list-group-item">Computer Architecture</li> 
+						    	<li class="list-group-item">Linear Algebra</li> 
+						    	<li class="list-group-item">Principles of Electronic Engineering 1 and 2</li> 
+						    	<li class="list-group-item">Probability and Random Processes</li> 
+						    	<li class="list-group-item">Digital Logic Design</li> 
+						    </ul>
+						</div>
+					</div>
+			    
+					<div class="row text-center">
+						<h3 class="text-center">Personal Projects</h3>
+						<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/MatchMaker.png" alt="Paris">
+						      <p><strong>Match Maker</strong></p>
+						      <p>Fri. 27 November 2015</p>
+						      <p>MatchMaker pairs you up with other tennis players located near you and around a similar skill level. The app gives you a selection of players to choose from, and if you would like to challenge them to a match, simply click on their icon, view their statistics, and begin chatting with them to schedule a match.</p>
+						    </div>
+						</div>
+						<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <img src="https://s3.amazonaws.com/justin-may-personal-website-drive/RunningInThe90s.png" alt="New York">
+						      <p><strong>Running in the 90s</strong></p>
+						      <p>Penn Apps Winter 2018 Top 10</p>
+						      <p>This is an interactive game to learn simple piano mechanics by giving children a fun rewarding way to practice. Using a Midicontroller we map piano keys onto a keyboard, and use them as inputs. Chords and arpeggios correspond to actions on the screen.</p>
+						    </div>
+						</div>
+						<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <img src="sanfran.jpg" alt="San Francisco">
+						      <p><strong>San Francisco</strong></p>
+						      <p>Sun. 29 November 2015</p>
+						      <button class="btn">Buy Tickets</button>
+						    </div>
+						</div>
+					</div>
+
+
+
+
+			    </div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</body>
+	</html>
