@@ -34,8 +34,81 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-row">
 
 <!-- Blog entries -->
-<div class="w3-col l8 s12">
+<div id = "blogTwo" class="w3-col l8 s12">
   <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>New Years Resolutions and on the Subject of Learning</b></h3>
+      <h5>Day twenty six, <span class="w3-opacity">Thursday, January 3rd</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>
+        I left off the previous blog with a set of goals: 
+        <ol>
+          <li>Get proficient at web design</li>
+          <li>Improve my writing</li>
+          <li>Note important ideas I come across</li>
+          <li>Highlight projects I undertake</li>
+          <li>Record my life</li>
+        </ol>
+        I have a hypothesis that the following design process will lead to better outcomes: define goals, outline a plan of action, break said actions into discrete steps, follow said steps in a consistent fashion, reflect and improve in a consistent fashion, reduce friction to take said steps, track improvement, meditate on said action, and profit. This idea seems incredibly trivial and self explanatory, but my insight is this: my whole life I have been — in my cohort of friends — incredibly medicore (It's actually incredible how medicore, if you controlled for factors such as varying socio-economic backgrounds, different teachers, access to specalized educations such as Music, Sports, etc. my GPA, success in sports, school rankings, etc. I am amazingly average.) This is not to say, though, that I am neither deeply unhappy, unsatisified, nor regretful for these experiences. This is rather, a reflection on my imperfect proces of learning. 
+
+        The process of iterative learning, reflection, and improvement (known to some as "deliberate practice" or "perfect practice makes perfect") was first verbalized to me in an incredible book called "Grit: The Power of Passiona and Perseverance," by Angela Duckworth. If you haven't heard of it, here's an incredible <a href="https://www.youtube.com/watch?v=W-ONEAcBeTk">Google talk</a>. If anything, my biggest takeaway is the following two equations: 
+
+        <div>
+          Talent x Effort = Skill
+          Skill x Effort = ACHIEVEMENT
+        </div>
+
+        and in the pursuit of doing simple algebra to seem smart: 
+
+        <div>
+          Talent X Effort^2 = ACHIEVEMENT 
+        </div>
+
+        Then, for no real purpose, the "runtime" of Achievement (holding talent as a constant) is O(effort^2). I have always found it helpful to frame abstract concepts with relateable ideas. 
+
+        The "Theme" or henceforth new years resolution I have for 2019 is meaningful effort or grit. A gritty year. Year of Grit. Whatever that may be, it should inform my every decision (and hopefully develop as a skill).  
+
+        I will leave off this blog post with a plan of action for each goal: 
+        <ol>
+          <li>Get proficient at web design</li>
+          <ol>
+            <li>Redesign my personal website in Angular </li>
+            <li>(Execiting project I'm not sure I can reveal for legal reasons)</li>
+          </ol>
+          <li>Improve my writing</li>
+          <ol>
+            <li>Write minimum one blog post per month</li>
+            <li>Read minimum ten blog posts per month</li>
+            <li>Ask one new person per month to review my writing</li>
+          </ol>
+          <li>Note important ideas I come across</li>
+          <ol>
+            <li>Highlight at least one important talk/ concept/ book/ blog etc. per blog</li>
+            <li>Research and explore these ideas more before each blog to dive into them deeper</li>
+          </ol>
+          <li>Highlight projects I undertake</li>
+          <ol>
+            <li>Post updates on major projects I'm undertaking</li>
+            <li>Post solutions to hard problems I tackle</li>
+            <li>List all my major projects to come</li>
+          </ol>
+          <li>Record my life</li>
+          <ol>
+            <li>Create a flexible weekly schedule to keep</li>
+            <li>Record meaningful progress and insights</li>
+          </ol>
+        </ol>
+
+
+      </p>
+    </div>
+  </div>
+  <hr>
+
   <div id = "groundZero" class="w3-card-4 w3-margin w3-white">
     <figure>
       <img class="crop" src="images/tracks.jpg" alt="Nature" style="width:100%">
@@ -93,25 +166,6 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
   <hr>
 
-  <div class="w3-card-4 w3-margin w3-white">
-    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
-      <h3><b>Ground Zero</b></h3>
-      <h5>Day one, <span class="w3-opacity">Saturday, December 8th</span></h5>
-    </div>
-
-    <div class="w3-container">
-      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
-
   <div id = "bob" class="w3-card-4 w3-margin w3-white">
     <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
@@ -142,28 +196,23 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Posts</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
+
+
+      <!--       Legend        -->
+
+
+
+      <li class="w3-padding-16" onclick = "location.href = '#groundZero'">
+        <img src="images/tracks.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">New Years Resolutions and on the Subject of Learning</span><br>
+        <span>Theme of the Year: "Grit"</span>
+      </li>
+
       <li class="w3-padding-16" onclick = "location.href = '#groundZero'">
         <img src="images/tracks.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
         <span class="w3-large">The Baader-Meinhof Phenomenon</span><br>
         <span>The First Entry</span>
-      </li>
-      <!--
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li> 
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>   
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>
-      -->  
+      </li>  
     </ul>
   </div>
   <hr> 
