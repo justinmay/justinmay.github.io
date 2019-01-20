@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.54da211c.chunk.css",
-  "main.js": "/static/js/main.9c7adb26.chunk.js",
-  "main.js.map": "/static/js/main.9c7adb26.chunk.js.map",
+  "main.css": "/static/css/main.6ad210c0.chunk.css",
+  "main.js": "/static/js/main.837cc2df.chunk.js",
+  "main.js.map": "/static/js/main.837cc2df.chunk.js.map",
   "static/js/1.fde51080.chunk.js": "/static/js/1.fde51080.chunk.js",
   "static/js/1.fde51080.chunk.js.map": "/static/js/1.fde51080.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -20,8 +20,8 @@
   "static/media/microsoft.jpg": "/static/media/microsoft.95dd29bc.jpg",
   "static/media/newYear.jpg": "/static/media/newYear.9c3983c5.jpg",
   "static/media/me.jpg": "/static/media/me.d111a261.jpg",
-  "static/css/main.54da211c.chunk.css.map": "/static/css/main.54da211c.chunk.css.map",
+  "static/css/main.6ad210c0.chunk.css.map": "/static/css/main.6ad210c0.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.50baa9e69867175685153a9aae0e91a6.js": "/precache-manifest.50baa9e69867175685153a9aae0e91a6.js",
+  "precache-manifest.1b9e9454740cd98a800a1c04b66d7d18.js": "/precache-manifest.1b9e9454740cd98a800a1c04b66d7d18.js",
   "service-worker.js": "/service-worker.js"
 }
