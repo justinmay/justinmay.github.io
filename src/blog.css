@@ -1,0 +1,28 @@
+
+ol, ul {
+	padding: 20px;
+}
+
+.yikes{
+	max-width:1400px
+}
+
+.imgStyle{
+	width:100%
+}
+
+.smolImgStyle {
+	width:50px
+}
+
+.floatRight{
+  position:fixed;
+  width:120px;
+  height:50px;
+  right:40px;
+  background-color:#424242;
+  color:#FFF;
+  text-align:center;
+  z-index: 2;
+  bottom: 40px;
+}
