@@ -4,18 +4,19 @@
   "homepage": "https://justinmay.github.io/",
   "private": true,
   "dependencies": {
-    "@types/google-map-react": "^1.1.0",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.11",
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",
+    "@types/react-image-gallery": "^1.0.2",
     "@types/react-lottie": "^1.2.3",
     "@types/react-router-dom": "^4.3.4",
     "gh-pages": "^2.1.1",
-    "google-map-react": "^1.1.5",
+    "google-map-react": "^1.1.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-lottie": "^1.2.3",
+    "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.0",
     "typescript": "^3.6.3"
@@ -42,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/google-map-react": "^1.1.8"
   }
 }

@@ -62,11 +62,11 @@ class AboutMe extends React.Component<AboutMeProps,AboutMeState> {
                     <div className="infoContainer">
                         <h1 className="title"> Justin May</h1>
                         <div className="description">
-                        I am a senior at Rutgers - New Brunswick studying Electrical and Computer Engineering 
-                        and Computer Science. I strongly believe in using compassion and kindness 
-                        to better identify and solve the suffering of those around us. I believe that we can ultimately use technology
-                         for the greater good. I'm a sucker for good UX. 
-                          In my free time, I love photography, Model UN, longboarding, and reading.
+                        Hello and welcome to my website! I like messing around with technology, so be prepared to witness a whole bunch of 
+                        bugginess. Think of this website as a fun art project. 
+                        <br></br>
+                        A little something something about me: I graduated in May 2020 from Rutgers-New Brunswick with a double major in Electrical and Computer Engineering 
+                        and Computer Science. I am interested in technology, start ups, photography, finance, and creating art with technology. So really a lot of varied things. 
                         </div>
                     </div>
                 </div>

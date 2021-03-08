@@ -16,6 +16,17 @@ import p1 from '../assets/pictures/pennapps/p1.png';
 import p2 from '../assets/pictures/pennapps/p2.png';
 import p3 from '../assets/pictures/pennapps/p3.png';
 import a1 from  '../assets/pictures/arbender/a1.png';
+import opus1 from '../assets/pictures/opus/opus1.png';
+import opus2 from '../assets/pictures/opus/opus2.png';
+import opus3 from '../assets/pictures/opus/opus3.png';
+import opus4 from '../assets/pictures/opus/opus4.png';
+import opus5 from '../assets/pictures/opus/opus5.png';
+import opus6 from '../assets/pictures/opus/opus6.png';
+import opus7 from '../assets/pictures/opus/opus7.png';
+import opus8 from '../assets/pictures/opus/opus8.png';
+import opus9 from '../assets/pictures/opus/opus9.png';
+import poker1 from '../assets/pictures/poker/poker1.png';
+import poker2 from '../assets/pictures/poker/poker2.png';
 
 type PortfolioProps =  {
 }
@@ -32,7 +43,7 @@ class Portfolio extends React.Component<PortfolioProps,PortfolioState> {
 
     render() {
         return (
-            <div style={{backgroundColor: "#999", width:"100vw",height:"100vh",overflow:"scroll"}}>
+            <div className="projects">
                 <div className="FloatRight">
                     <div className="NavBar">
                         <Link to='/Home'>
@@ -44,12 +55,32 @@ class Portfolio extends React.Component<PortfolioProps,PortfolioState> {
                         <Link to='/Portfolio'>
                         <button className="NavBarLink">Projects</button>
                         </Link>
+                        <Link to='/WorkExperience'>
+                        <button className="NavBarLink">Work</button>
+                        </Link>
                         <Link to='/Photography'>
                         <button className="NavBarLink">Photos</button>
                         </Link>
                     </div>
                 </div>
                 <div className="projectTemp">
+                    <Project 
+                    title="Hot Pot Poker: A Social Poker Website"
+                    pics={[poker1,poker2]}
+                    body="A social poker website where you can play with your friends! If you find any bugs please create a ticket on our github and check our issues for known bugs! Created with React, MongoDB Atlas, and GraphQL."
+                    webLink="http://hotpotpoker.space/"
+                    />
+                </div>
+                <div style={{width:"100vw",height:"100vh",backgroundColor:"rgb(39, 39, 39)",position:"relative"}}>
+                    <div className="quote">
+                    <Project 
+                        title="Senior Capstone: Opus- Gamifying Piano Learning"
+                        pics={[opus1,opus2,opus3,opus4,opus5,opus6,opus7,opus8,opus9]}
+                        video="https://www.youtube.com/watch?v=Gv2rCLRoPAU"
+                        body="This project is a video game created on iOS that uses audio detection algorithims to listen to ambient music as in puts. Players can use real instruments as the controller to learn music fundamentals including chords, scales, and arpeggios. "/>
+                    </div>
+                </div>
+                <div style={{width:"100vw",height:"100vh",backgroundColor:"rgb(39, 39, 39)",position:"relative"}}>
                     <Project 
                     title="Smart Robot Navigation with Computer Vision and EEG Control"
                     pics={[poster,circuit,robot]}

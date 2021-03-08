@@ -8,6 +8,7 @@ type ProjectProp =  {
     github?: string,
     devpost? :string,
     video?: string,
+    webLink?: string,
 }
 
 type ProjectState = {
@@ -26,7 +27,7 @@ class Project extends React.Component<ProjectProp,ProjectState> {
                 <h1> {this.props.title} </h1>
                 <div className="images">
                     {this.props.pics.map(pic => {
-                        return <img src={pic} alt="circuit"/>
+                        return <img src={pic} alt="circuit" className="scrollImage"/>
                     })}
                 </div>
                 <p className="bodyText">
@@ -36,6 +37,7 @@ class Project extends React.Component<ProjectProp,ProjectState> {
                     {this.props.github ? <a href={this.props.github}>github</a> : null}
                     {this.props.video ? <a href={this.props.video}>youtube</a> : null}
                     {this.props.devpost ? <a href={this.props.devpost}>devpost</a> : null}
+                    {this.props.webLink ? <a href={this.props.webLink}>link</a> : null}
                 </div>
             </div>
         )

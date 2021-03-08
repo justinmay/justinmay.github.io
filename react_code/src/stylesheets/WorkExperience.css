@@ -24,8 +24,9 @@
     margin-right: 0;
     margin-bottom: 1vw;
     color: black;
-    height: 5vh;
-    width: 5vw;
+    height: 3vh;
+    width: 6vw;
+    margin-top: 1vh;
     font-size: 1vw;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
@@ -74,13 +75,15 @@
     width: 100%;
     color: black;
     background-color: clear;
-    font-size: 1.5vw;
+    font-size: 20px;
     text-align: left;
-    height: 8vh;
+    height: 50px;
     margin:0;
     padding-left: 1vw;
     border-radius: 10px;
     border-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .selected:focus {
@@ -94,6 +97,25 @@
     background-color: white;
 }
 
+.search{
+    font-size: 15px;
+    padding-left: 1vw;
+}
+
 .search:hover {
     background-color: aliceblue;
+}
+
+.hamburgerIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.locationIcon{
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    margin-left: 10px;
 }

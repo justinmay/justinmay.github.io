@@ -115,7 +115,7 @@ class TypeText extends React.Component<TypeTextProps,TypeTextState> {
                     </Link>
                     <Link to='/WorkExperience'>
                     <button className={this.state.show3}>
-                        Work Experience
+                        Work
                     </button>
                     </Link>
                     <Link to='/Photography'>
