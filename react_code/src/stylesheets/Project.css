@@ -81,16 +81,6 @@
     visibility: hidden;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.images::-webkit-scrollbar {
-    display: none;
-}
-
-.images:hover {
-    -ms-overflow-style: auto;  /* IE and Edge */
-    scrollbar-width: auto;  /* Firefox */
-}
-
 .images > img {
     object-fit: contain;
     margin-left: 2vw;
@@ -102,27 +92,6 @@
 .images:focus {
   visibility: visible;
 }
-
-.scrollbox {
-    width: 10em;
-    height: 10em;
-    overflow: auto;
-    visibility: hidden;
-  }
-  
-  .scrollbox-content,
-  .scrollbox:hover,
-  .scrollbox:focus {
-    visibility: visible;
-  }
-  
-  .scrollbox_delayed {
-    transition: visibility 0.2s;
-  }
-  
-  .scrollbox_delayed:hover {
-    transition: visibility 0s 0.2s;
-  }
 
 .linkContainer {
     display: flex;
